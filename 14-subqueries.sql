@@ -1,0 +1,16 @@
+-- a view is stored by the database engine and its a permanent thing you can choose in the future. View just stores query and it will be reexecuted if view is used.
+-- CREATE VIEW base_result AS
+-- SELECT *
+-- FROM sales
+-- WHERE volume > 1000; ---
+-- SELECT customer_name,
+--     product_name
+-- FROM (
+--         SELECT *
+--         FROM sales
+--         WHERE volume > 1000
+--     ) AS base_result;
+-- if view is saved we can just run this command below
+-- SELECT customer_name,
+--     product_name
+-- FROM base_result;
